@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/kcl.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title-slide" data-background="images/kcl-logo.png" data-state="top-right">
+					<h2 id="presentation-title">
+						Your Title Goes Here.
+					</h2>
+					<p>
+						Your Name, PhD<br>
+						Your Job
+					</p>
+					<img height="80px" max-width="100%" data-src="images/fans-logo.png" alt="Fans Logo" align="left">
+					<img height="65px" max-width="100%" data-src="images/sackler-logo.png" alt="Sackler Logo" align="left">
+				</section>
+				<section>
+					<h3>Slide title.</h3>
+					<p>Slide Content. You can type away and generally do what you want! To insert a line break, use the br <br> tag.</p>
+					<p>Using a new p tag also starts a new line.</p>
+					<p>You can start a list by using the ul tag:</p>
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+					</ul>
+					<p>And a numbered list using the ol tag:</p>
+					<ol>
+						<li>Item 1</li>
+						<li>Item 2</li>
+					</ol>
+				</section>
+				<section>
+					<p>Start a new slide with the section tag, and insert images using the img tag:</p>
+					<img width="200%" data-src="images/wikipedia-logo.svg" alt="Wikipedia Logo" align="left">
+					<p>(This works great with .svg images!)</p>
+
+				</section>
+			</div>
+		</div>
+
+
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				transition: "slide",
+				backgroundTransition: "none",
+				center: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
